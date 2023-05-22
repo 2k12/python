@@ -28,4 +28,4 @@ def eliminarletras():
     cv2.destroyAllWindows()
 
 
-eliminarletras()
+# eliminarletras()

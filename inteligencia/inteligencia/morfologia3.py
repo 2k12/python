@@ -18,7 +18,7 @@ def puntaspinon():
     dilatada = cv2.dilate(imagen_binaria, kernel, iterations=1)
     
     # Realizar una operación de erosión
-    erosionada = cv2.erode(dilatada, kernel, iterations=2)
+    erosionada = cv2.erode(dilatada, kernel, iterations=3)
     
     # Apertura
     imagen_apertura = cv2.morphologyEx(erosionada, cv2.MORPH_OPEN, kernel)

@@ -4,9 +4,9 @@ from pyzbar import pyzbar
 from PIL import Image, ImageDraw, ImageFont
 import matplotlib.pyplot as plt
 
-def extraer_numeros_codigo_barras(ruta_imagen):
+def extraer_numeros_codigo_barras():
     # Cargar la imagen
-    img = cv2.imread(ruta_imagen)
+    img = cv2.imread('./pictures/codigo1.png')
 
     # Convertir la imagen a escala de grises
     img_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -70,7 +70,7 @@ def extraer_numeros_codigo_barras(ruta_imagen):
     # Ajustar el diseño y mostrar las imágenes
     plt.tight_layout()
     plt.show()
- # Imprimir los arreglos con los números del código de barras
+    # Imprimir los arreglos con los números del código de barras
     for i, numeros in enumerate(numeros_codigo):
         print(f"Números del código de barras {i+1}:", numeros)
 
@@ -81,8 +81,8 @@ def extraer_numeros_codigo_barras(ruta_imagen):
     for i, codigos in enumerate(codigos_ascii):
         print(f"Código ASCII individual {i+1}:", codigos)
 
-# Ruta de la imagen con el código de barras
-ruta_imagen = "./pictures/codigo1.png"
+# # Ruta de la imagen con el código de barras
+# ruta_imagen = "./pictures/codigo1.png"
 
-# Llamar a la función para extraer los números del código de barras
-extraer_numeros_codigo_barras(ruta_imagen)
+# # Llamar a la función para extraer los números del código de barras
+# extraer_numeros_codigo_barras(ruta_imagen)
