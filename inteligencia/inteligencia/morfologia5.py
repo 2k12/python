@@ -22,4 +22,3 @@ def llaves():
     cv2.destroyAllWindows()
 
 
-llaves()

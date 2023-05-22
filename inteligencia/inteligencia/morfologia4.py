@@ -30,4 +30,3 @@ def ejercicio_clavos():
     cv2.destroyAllWindows()
 
 
-ejercicio_clavos()
