@@ -14,8 +14,7 @@ imagen_negativa = cv2.bitwise_not(imagen_binaria)
 # Aplicar el etiquetado de componentes
 num_componentes, etiquetas, stats, centroides = cv2.connectedComponentsWithStats(imagen_negativa)
 
-# Mostrar el número total de componentes (incluyendo el fondo)
-print('Número total de componentes:', num_componentes)
+
 
 # variable auxiliar para eliminar objetos pequeños
 aux = 0
@@ -70,37 +69,34 @@ for i in range(1, num_componentes):
     cv2.rectangle(imagen_con_rectangulos, (x, y), (x+w, y+h), color_verde, 2)
 
 
-# ? Crear una figura con una cuadrícula de subparcelas
-# ? fig, axs = plt.subplots(3, 2)
-# ? 
-# ? 
-# ? axs[0,0].imshow(imagen, cmap='gray')
-# ? 
-# ? axs[0,0].set_title('Imagen original')
-# ? axs[0,1].imshow(imagen_binaria, cmap='gray')
-# ? axs[0,1].set_title('Imagen binaria')
-# ? axs[1,0].imshow(imagen_negativa, cmap='gray')
-# ? axs[1,0].set_title('Imagen negativa')
-# ? axs[1,1].imshow(etiquetas.astype('uint8') * (255 // num_componentes), cmap='gray')
-# ? axs[1,1].set_title('Imagen etiquetada')
-# ? axs[2,0].imshow(imagen_con_rectangulos, cmap='gray')
-# ? axs[2,0].set_title('Bounding + Centroid')
-# ? axs[2,1].imshow(imagen_sin_objetos_pequenos, cmap='gray')
-# ? axs[2,1].set_title('Eliminacion de figuras')
+# Mostrar el número total de componentes
+print('Número total de componentes:', num_componentes-1)
+
+# Crear una figura con una cuadrícula de subparcelas
+fig, axs = plt.subplots(3, 2)
+
+for i in range(3):
+    for j in range(2):
+        axs[i, j].axis('off')
 
 
-# ? Ajustar el espaciado entre las subparcelas
-# ? plt.tight_layout()
+axs[0,0].imshow(imagen, cmap='gray')
+axs[0,0].set_title('Imagen original')
+axs[0,1].imshow(imagen_binaria, cmap='gray')
+axs[0,1].set_title('Imagen binaria')
+axs[1,0].imshow(imagen_negativa, cmap='gray')
+axs[1,0].set_title('Imagen negativa')
+axs[1,1].imshow(etiquetas.astype('uint8') * (255 // num_componentes), cmap='gray')
+axs[1,1].set_title('Imagen etiquetada')
+axs[2,0].imshow(imagen_con_rectangulos, cmap='gray')
+axs[2,0].set_title('Bounding + Centroid')
+axs[2,1].imshow(imagen_sin_objetos_pequenos, cmap='gray')
+axs[2,1].set_title('Eliminacion de figuras')
 
-# ? Mostrar la figura con las subparcelas
-# ? plt.show()
-
-cv2.imshow('Imagen original', imagen)
-cv2.imshow('Imagen binaria', imagen_binaria)
-cv2.imshow('Imagen negativa', imagen_negativa)
-cv2.imshow('Imagen etiquetada', etiquetas.astype('uint8') * (255 // num_componentes))
-cv2.imshow('Imagen Bounding + Centroid', imagen_con_rectangulos)
-cv2.imshow('Eliminacion de figuras ', imagen_sin_objetos_pequenos)
+# Ajustar el espaciado entre las subparcelas
+plt.tight_layout()
+# Mostrar la figura con las subparcelas
+plt.show()
 
 
 cv2.waitKey(0)
