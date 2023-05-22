@@ -99,9 +99,4 @@ def main():
     # Ajustar el espaciado entre las subparcelas
     plt.tight_layout()
     # Mostrar la figura con las subparcelas
-    plt.show()
-    
-    
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    
+    plt.show()    
