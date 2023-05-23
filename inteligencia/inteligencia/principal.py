@@ -28,35 +28,36 @@ import descripcion
 import descripcion2
 
 
-
-
 def ingreso():
     n = input("$ ")
     return n
+
 def menu():
-    print("-------------------MENU-INTERACTIVO------------------")
-    print("-------INGRESE-NUMERO-CORRESPONDIENTE-A-LA-OPCION----")
-    print("----------------AUTOR:-Pastillo-Joan-----------------")
+    print("-------------------MENU-INTERACTIVO-------------------")
+    print("-------INGRESE-NUMERO-CORRESPONDIENTE-A-LA-OPCION-----")
+    print("-----------------AUTOR:-Pastillo-Joan-----------------")
+    print("---------------COLABORADOR:-Cadena-Edwin--------------")
     print("------------------------------------------------------")
     print("0 -> SALIR")
     print("------------------------------------------------------")
-    print("a -> ElIMINAR LETRAS.1    ||   b -> ELIMINAR FIGURAS.2")
-    print("c -> EXTRAER  LINEAS.3    ||   d -> EXTRAER  NUMEROS.4")
+    print("a -> ElIMINAR LETRAS.1     ||   b -> ELIMINAR FIGURAS.2")
+    print("c -> EXTRAER  LINEAS.3     ||   d -> EXTRAER  NUMEROS.4")
     print("------------------------------------------------------")
-    print("1 -> EJERCICIOS FORMATOS1 || 2 -> EJERCICIOS FORMATOS2")
+    print("1 -> EJERCICIOS FORMATOS1  || 2 -> EJERCICIOS FORMATOS2")
     print("------------------------------------------------------")
-    print("3 -> EJERCICIOS PROCESA.1 || 4 -> EJERCICIOS PROCESA.2")
-    print("5 -> EJERCICIOS PROCESA.3 || 6 -> EJERCICIOS PROCESA.4")
+    print("3 -> EJERCICIOS PROCESA.1  || 4 -> EJERCICIOS PROCESA.2")
+    print("5 -> EJERCICIOS PROCESA.3  || 6 -> EJERCICIOS PROCESA.4")
     print("------------------------------------------------------")
-    print("7 -> EJERCICIOS MORFOLO.1 || 8 -> EJERCICIOS MORFOLO.2")
-    print("9 -> EJERCICIOS MORFOLO.3 || 10 -> EJERCICIOS MORFOLO.4")
+    print("7 -> EJERCICIOS MORFOLO.1  || 8 -> EJERCICIOS MORFOLO.2")
+    print("9 -> EJERCICIOS MORFOLO.3  || 10 -> EJERCICIOS MORFOLO.4")
     print("11 -> EJERCICIOS MORFOLO.5")
-    print("------------------------------------------------------")
+    print("--------------------------------------------------------")
     print("12 -> EJERCICIOS SEGMENT.1 || 13 -> EJERCICIOS SEGMENT.2")
     print("14 -> EJERCICIOS SEGMENT.3 || 15 -> EJERCICIOS SEGMENT.4")
-    print("------------------------------------------------------")
+    print("--------------------------------------------------------")
     print("16 -> EJERCICIOS DESCRIP.1 || 17 -> EJERCICIOS DESCRIP.2")
-    print("------------------------------------------------------")
+    print("--------------------------------------------------------")
+
 def aplicativo():
     menu()
     n=ingreso()
