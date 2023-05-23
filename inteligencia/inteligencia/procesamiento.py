@@ -16,7 +16,8 @@ def main():
     # Crear una figura con una cuadrícula de subparcelas
     fig, axs = plt.subplots(1, 2)
 
-
+    
+    axs[0].axis('off')
 
     # Ajustar los valores de intensidad en escala de grises
     # ? imagen_gris_ajustada = # Aplicar técnicas de inteligencia artificial para ajustar los valores de intensidad
