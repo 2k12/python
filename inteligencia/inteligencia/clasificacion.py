@@ -8,7 +8,6 @@ def main():
     imagen_negativa = cv2.bitwise_not(imagen_binarizada)
 
 
-
     #impresion de las imagenes
     fig,axs = plt.subplots(2,2)
 
@@ -22,11 +21,11 @@ def main():
     axs[0,1].set_title('Imagen Binarizada')
     axs[1,0].imshow(imagen_negativa, cmap='gray')
     axs[1,0].set_title('Imagen Negativa')
-    # axs[1,1].imshow('imagen', cmap='gray')
-    # axs[1,1].set_title('Imagen Normal')
+    # axs[1,1].imshow(imagen_apertura, cmap='gray')
+    # axs[1,1].set_title('Imagen apertura')
     
 
-
+    
     plt.tight_layout()
     plt.show()
 
