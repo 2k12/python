@@ -10,7 +10,7 @@ Para que el aplicativo funcione se debe ejecutar el archivo.
 - **Aplicativo** -
 El aplicativo consta de un menu interactivo para poder seleccionar uno de los ejercicios que se muestran en el menú.
 
-![image](https://github.com/2k12/python/assets/104972625/75329eb8-f078-48b9-99b5-ef8b70028bda)
+![image](https://github.com/2k12/python/assets/104972625/5ef5c7ea-cef9-404c-9718-af88199764b4)
 
 ## Uso 💪
 
