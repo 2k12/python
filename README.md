@@ -1,4 +1,4 @@
-# Proyectos Python 📋
+# Aplicativo Python Ejercicios IA 📋
  
 El Archivo inteligencia contiene una carpeta con distintos ejercicios basicos los cuales se desarrollaron para poner en practica el procesamiento de imagenes usando Open CV para el procesamiento de imagenes y  el Lenguaje de programación Python.
 
@@ -19,9 +19,10 @@ Este proyecto se desarrollo con el fin de sustentar los conocimientos sobre Inte
 ## Construido con 🛠️
 
 <p align="left"> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
 ## Autor ✒️
 
-- **Joan Pastillo** - _Trabajo Inteligencia Artificial - [Joan Pastillo](https://github.com/2k12)
-- **Edwin Cadena** - _Trabajo Inteligencia Artificial - [Edwin Cadena](https://github.com/zanianzero)
-- **Jairo Perez** - _Trabajo Inteligencia Artificial - [Jairo Perez]
-- **Dylan Ortega** - _Trabajo Inteligencia Artificial - [Dylan Ortega](https://github.com/DylanOrtega75)
+- **Joan Pastillo** - Trabajo Inteligencia Artificial - [Joan Pastillo](https://github.com/2k12)
+- **Edwin Cadena** - Trabajo Inteligencia Artificial - [Edwin Cadena](https://github.com/zanianzero)
+- **Jairo Perez** - Trabajo Inteligencia Artificial - [Jairo Perez]
+- **Dylan Ortega** - Trabajo Inteligencia Artificial - [Dylan Ortega](https://github.com/DylanOrtega75)
