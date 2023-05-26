@@ -26,6 +26,8 @@ import segmentacion4
 # !--------
 import descripcion
 import descripcion2
+# !--------
+import clasificacion
 
 
 def ingreso():
@@ -36,8 +38,10 @@ def menu():
     print("-------------------MENU-INTERACTIVO-------------------")
     print("-------INGRESE-NUMERO-CORRESPONDIENTE-A-LA-OPCION-----")
     print("-----------------AUTOR:-Pastillo-Joan-----------------")
-    print("---------------COLABORADOR:-Cadena-Edwin--------------")
-    print("------------------------------------------------------")
+    print("-----------------COLABORADOR:-Cadena-Edwin------------")
+    print("-----------------COLABORADOR:-Perez-Jairo-------------")
+    print("-----------------COLABORADOR:-Ortega-Dylan------------")
+    print("------------------------------------------------------")        
     print("0 -> SALIR")
     print("------------------------------------------------------")
     print("a -> ElIMINAR LETRAS.1     ||   b -> ELIMINAR FIGURAS.2")
@@ -57,6 +61,10 @@ def menu():
     print("--------------------------------------------------------")
     print("16 -> EJERCICIOS DESCRIP.1 || 17 -> EJERCICIOS DESCRIP.2")
     print("--------------------------------------------------------")
+    print("18 -> EJERCICIOS CLASIFI.1 ")
+    print("--------------------------------------------------------")
+
+
 
 def aplicativo():
     menu()
@@ -126,6 +134,8 @@ def aplicativo():
         elif n == "17":
             descripcion2.boundin_centr_llaves()
             n=ingreso()
+        elif n == "18":
+            clasificacion.main()
         else:
             break
 
