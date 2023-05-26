@@ -31,9 +31,6 @@ def main():
         if stats[i, cv2.CC_STAT_AREA]  > aux:
             aux = stats[i, cv2.CC_STAT_AREA]
             porcentaje = aux * 0.3
-        
-        if stats[i, cv2.CC_STAT_AREA] < porcentaje:
-        
             # Crear una máscara para filtrar objetos pequeños
             mascara_objetos_pequenos = np.zeros_like(imagen_negativa, dtype=np.uint8)
     
