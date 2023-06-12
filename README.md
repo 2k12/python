@@ -23,6 +23,9 @@ Este proyecto se desarrollo con el fin de sustentar los conocimientos sobre Inte
 ## Autor ✒️
 
 - **Joan Pastillo** - Trabajo Inteligencia Artificial - [Joan Pastillo](https://github.com/2k12)
+
+## Colaboradores 🔧
+
 - **Edwin Cadena** - Trabajo Inteligencia Artificial - [Edwin Cadena](https://github.com/zanianzero)
 - **Jairo Perez** - Trabajo Inteligencia Artificial - [Jairo Perez](https://github.com/JairoPerez106)
 - **Dylan Ortega** - Trabajo Inteligencia Artificial - [Dylan Ortega](https://github.com/DylanOrtega75)
